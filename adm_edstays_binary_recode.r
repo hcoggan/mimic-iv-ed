@@ -20,7 +20,7 @@ library(janitor)
 
 #This file recodes all exposures  as binary variables; only acts on adm_edstays (includes extra data for admitted patients) is dealt with in a different file
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 adm_edstays <- read.csv("adm_edstays.csv")
 

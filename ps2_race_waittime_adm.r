@@ -34,7 +34,7 @@ library(cobalt)
 wait_times <- c(6.5*60, 9*60) #in minutes
 wait_names <- c("top_50", "top_25")
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 adm_edstays <- read.csv("adm_edstays_binary_recoded_mult_visits_mimic_with_age_vitals.csv")
 
@@ -42,6 +42,7 @@ adm_edstays <- read.csv("adm_edstays_binary_recoded_mult_visits_mimic_with_age_v
 adm_edstays <- adm_edstays %>% filter(time_in_ed <= 24*60)
 
 save_filepath <- "ps2/race/wait_times/admitted/"
+dir.create(save_filepath, recursive=TRUE) 
 
 #identify covariates- delete outcomes, and race
 vars <- colnames(adm_edstays)

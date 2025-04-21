@@ -29,9 +29,10 @@ library(cobalt)
 
 #question: is URGENCY affected by GENDER?-- this time broken out by race
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 save_filepath <- "ps2/gender/by_race/"
+dir.create(save_filepath, recursive=TRUE) 
 
 #data on all patients
 edstays <- read.csv("edstays_binary_recoded_mult_visits_mimic_with_age.csv")

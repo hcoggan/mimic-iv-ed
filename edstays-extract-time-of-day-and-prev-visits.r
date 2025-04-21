@@ -1,6 +1,6 @@
 library(lubridate)
 library(ggsurvfit)
-library(gtsummary)
+#library(gtsummary)
 library(tidycmprsk)
 library(testit)
 library(httpgd)
@@ -19,7 +19,7 @@ library(rlang)
 #it also records the time of day at which patients are admitted
 #then it saves
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 edstays <- read.csv("mimic-iv-ed-2.2/ed/edstays.csv")
 

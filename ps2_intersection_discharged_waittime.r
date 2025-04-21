@@ -35,9 +35,10 @@ library(cobalt)
 wait_times <- c(300, 465) #in minutes
 wait_names <- c("top_50", "top_25")
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 save_filepath <- "ps2/rg_intersection/wait_times/discharged/"
+dir.create(save_filepath, recursive=TRUE) 
 
 #data on all patients- get only the discharged ones
 edstays <- read.csv("edstays_binary_recoded_mult_visits_mimic_with_age_vitals.csv")

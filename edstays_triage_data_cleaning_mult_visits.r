@@ -18,7 +18,7 @@ library(rlang)
 #takes patients from MULTIPLE visits
 #uses same filtration as La Cava github
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 
 #assume that we have run edstays-extract-time-of-day-and-prev visits

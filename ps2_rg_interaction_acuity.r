@@ -31,9 +31,10 @@ library(cobalt)
 #here we calculate expected odds ratios and make plots
 
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 save_filepath <- "ps2/rg_intersection/"
+dir.create(save_filepath, recursive=TRUE) 
 
 #data on all patients
 edstays <- read.csv("edstays_binary_recoded_mult_visits_mimic_with_age.csv")

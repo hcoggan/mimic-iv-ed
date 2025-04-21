@@ -30,7 +30,7 @@ library(cobalt)
 #question: is URGENCY affected by AGE?
 
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 save_filepath <- "ps2/age/"
 

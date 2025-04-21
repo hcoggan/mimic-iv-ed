@@ -16,7 +16,7 @@ library(stringr)
 
 #This file deals with the 'chief complaint data'
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 edstays <- read.csv("edstays_mult_visit_with_vitals.csv")
 

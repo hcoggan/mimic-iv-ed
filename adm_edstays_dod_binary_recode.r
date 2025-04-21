@@ -20,7 +20,7 @@ library(janitor)
 
 #This file recodes all exposures  as binary variables; only acts on adm_edstays, filtered by first visit with date of death
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 adm_edstays <- read.csv("adm_edstays_first_visit_with_linked_death.csv")
 

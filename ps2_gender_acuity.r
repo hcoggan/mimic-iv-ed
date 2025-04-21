@@ -29,9 +29,10 @@ library(cobalt)
 
 #question: is URGENCY affected by GENDER?
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 save_filepath <- "ps2/gender/"
+dir.create(save_filepath, recursive=TRUE) 
 
 #data on all patients
 edstays <- read.csv("edstays_binary_recoded_mult_visits_mimic_with_age.csv")
@@ -48,7 +49,6 @@ past_triage <- covariates[startsWith(covariates, "during_stay") | startsWith(cov
 covariates <- covariates[!(covariates %in% past_triage)]
 
 print(covariates)
-assert(1==0)
 
 #create a combined column for ESI scores 1/2- this is our outcome
 edstays$urgent <- edstays$acuity_high + edstays$acuity_very_high

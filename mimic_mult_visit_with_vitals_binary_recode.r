@@ -21,7 +21,7 @@ library(janitor)
 #This file recodes all exposures (except those in the mimic data) as binary variables; only acts on edstays (i.e. for risk of acuity/admission)
 #adm_edstays (includes extra data for admitted patients) is dealt with in a different file
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 edstays <- read.csv("edstays_with_binarised_complaints_and_age.csv")
 

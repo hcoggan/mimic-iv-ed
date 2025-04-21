@@ -21,7 +21,7 @@ library(janitor)
 #now for multiple visits
 
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 edstays <- read.csv("edstays_with_binarised_complaints_and_age.csv")
 

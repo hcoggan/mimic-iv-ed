@@ -15,7 +15,7 @@ library(rlang)
 
 #File adds vital signs collected during stay, with a flag for whether or not a category was ever met
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 #edstays has already undergone binary recode
 edstays <- read.csv("edstays_binary_recoded_mult_visits_mimic_with_age.csv")

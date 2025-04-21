@@ -22,12 +22,12 @@ library(janitor)
 #This file retrieves age, language, insurance and marital status from MIMIC database
 #we also link ICD code from MIMIC
 
-setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
+#setwd("/Users/helenacoggan/Documents/MIMIC-IV-ED/")
 
 edstays <- read.csv("edstays_with_binarised_complaints.csv")
 #from MIMIC data
-patients <- read.csv("/Users/helenacoggan/Documents/mimic-iv-3.1/hosp/patients.csv")
-admissions <- read.csv("/Users/helenacoggan/Documents/mimic-iv-3.1/hosp/admissions.csv")
+patients <- read.csv("mimic-iv-3.1/hosp/patients.csv.gz")
+admissions <- read.csv("mimic-iv-3.1/hosp/admissions.csv.gz")
 diagnosis <- read.csv("mimic-iv-ed-2.2/ed/diagnosis.csv")
 
 
